@@ -1,0 +1,89 @@
+.Link {
+    padding: 5px;
+    width: 55px;
+    height:55px;
+    border-radius: 50%;
+    text-decoration:none;
+    margin-right:10px;
+    margin-left:4px;
+    margin-bottom: -7px;
+    Color:black;
+}
+
+.h23{
+    font-size:30px;
+    font-family:Helvetica;
+    color:black;
+    font-weight: bold;
+    background-color: rgb(255, 222, 180, .8);
+    padding:10px;
+}
+
+.flags{
+  border-radius: 70%;
+  transition: width .25s, box-shadow .25s;
+  width: 150px;
+}
+
+.flags:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  width: 200px;
+}
+
+.paginacion {
+  display: inline-block;
+}
+.paginacion a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+}
+.paginacion a.activo {
+  background-color: green;
+  color: white;
+}
+.paginacion a:hover:not(.activo){
+  background-color: gray;
+}
+
+.boton{
+    padding:5px;
+    border-radius:120px;
+    background-color:rgb(170, 203, 115, .8);
+    color: black;
+    font-size:20px;
+    font-weight: bold;
+    font-family:Verdana,Helvetica;
+    border: 0.5px solid black;
+    margin: 0px 5px 0px 5px;
+}
+
+.label{
+    font-size:20px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    background-color: white;
+    padding:5px;
+    border-radius:120px;
+}
+
+.DivCard{
+    border: 5px solid rgb(233, 36, 14);
+    border-radius: 40px;
+    width: 350px;
+    height: 350px;
+    display:row;
+    background-color: rgb(255, 222, 180, 0.5);
+    -webkit-box-shadow: 7px 10px 35px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 35px -10px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 35px -10px rgba(0,0,0,0.75);
+}
+
+.Conta{
+    display:flex;
+    flex-direction: row;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin:auto;
+}

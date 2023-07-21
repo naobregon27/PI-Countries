@@ -1,0 +1,73 @@
+
+.ImgBandera{
+    float: right;
+    border-radius:25px;
+    border: 3px solid black;
+    margin-right:40px;
+    height:300px ;
+    width:480px ;
+}
+.ImgBandera :hover{
+    border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);}
+
+.detalles{
+    font-size:16pt;
+    text-align: justify;
+    padding:2%;
+    line-height: normal!important;
+    color:#7F9BFF !important;
+    Font-family: Consolas, monaco, monospace;
+  
+}
+
+.botonDetail{
+    background: #fff; /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #4741d7; /* tamaño y color de borde */
+  padding: 16px 20px;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.botonDetail :hover {
+    color: #fff;/* color de fuente hover */
+  }
+
+.botonDetail :after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+  }  
+
+  .botonDetail :hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+  }
+
+  .Activity{
+    border: 5px solid rgb(233, 36, 14);
+    border-radius: 40px;
+    width: 350px;
+    height: 350px;
+    display:row;
+    background-color: rgb(255, 222, 180, 0.5);
+    -webkit-box-shadow: 7px 10px 35px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 35px -10px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 35px -10px rgba(0,0,0,0.75);
+
+  }

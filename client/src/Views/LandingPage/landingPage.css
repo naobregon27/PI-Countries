@@ -1,0 +1,93 @@
+body {
+  background-image: linear-gradient(to top, #38333b, #38336b, #38339b, #38341b, #38344b, #38348b, #38352b, #38358b, #38362b, #38366b, #38377b, #38380b);
+  margin: 0px;
+  background-attachment: fixed;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column-reverse;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../img/3d-political-world-map-4k-blue-brickwall-map-of-world-countries-creative.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.titulo {
+  background: rgb(136, 5, 5, 0.5);
+  border-radius: 30px 29px 29px 29px;
+  -webkit-border-radius: 30px 29px 29px 29px;
+  -moz-border-radius: 30px 29px 29px 29px;
+  box-shadow: 10px 3px 42px 6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 3px 42px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 3px 42px 6px rgba(0, 0, 0, 0.75);
+  margin: 60px 300px 60px 300px;
+}
+
+
+
+
+h1 {
+  font-size: 50px;
+  font-family: Verdana, Helvetica;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.h22 {
+  font-size: 40px;
+  font-family: Helvetica;
+  margin: 50px 600px 50px 600px;
+  font-style: oblique;
+  background: rgba(157, 153, 151, 0.9);
+  border-radius: 30px 29px 29px 29px;
+  -webkit-border-radius: 30px 29px 29px 29px;
+  -moz-border-radius: 30px 29px 29px 29px;
+  box-shadow: 10px 3px 42px 6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 3px 42px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 3px 42px 6px rgba(0, 0, 0, 0.75);
+}
+
+.Boton{
+  background: rgba(157, 153, 151, 0.5); /* color de fondo */
+  color: #d1220b; /* color de fuente */
+  border: 2px solid #dd5c29; /* tamaño y color de borde */
+  padding: 16px 20px;
+  border-radius: 93px 93px 93px 93px;
+  -webkit-border-radius: 93px 93px 93px 93px;
+  -moz-border-radius: 93px 93px 93px 93px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.Boton:hover {
+  color: #fff;/* color de fuente hover */
+}
+.Boton:after {
+  content: "";
+  background: #e97c16; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.Boton:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(-45deg) scale(1, 1);
+}
+
